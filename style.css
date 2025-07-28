@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px;
+}
+.gallery-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #fff;
+}
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+.gallery-item .title {
+  padding: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 95%;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 8px; right: 12px;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+.modal video {
+  width: 100%;
+  margin-bottom: 15px;
+}
